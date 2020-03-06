@@ -1,7 +1,7 @@
 # IBM Schematics Tutorial
 ## Introduction
 
-This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, setup two zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
+This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, set up 2 zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
 
 ![Workspace Architecture](docs/workspace-architecture.png)
 
