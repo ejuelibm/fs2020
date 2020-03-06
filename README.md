@@ -1,7 +1,7 @@
-# FastStart 2020 Schematics Lab
+# IBM Schematics Tutorial
 ## Introduction
 
-This lab will introduce you to the concepts within Schematics and how to create a VPC, setup two zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
+This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, setup two zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
 
 ![Workspace Architecture](docs/workspace-architecture.png)
 
@@ -14,7 +14,7 @@ This lab will introduce you to the concepts within Schematics and how to create 
 
 3. Check to make certain you have the appropriate role access on your account to provision infrastructure. If you are assigned an IBM Cloud Schematics service access role, you can view, create, update, or delete workspaces in IBM Cloud Schematics. To provision the IBM Cloud resources that you defined in your Terraform template, you must be assigned the IAM platform or service access role that is required to provision the individual resource. Refer to the [documentation](https://cloud.ibm.com/docs/home/alldocs) for your resource to determine the access policies that you need to provision and work with your resource. To successfully provision IBM Cloud resources, users must have access to a paid IBM Cloud account. Charges incur when you create the resources in the IBM Cloud account, which is initiated by clicking the Apply plan button. Here's a link to the docs for [Schematics Access](https://cloud.ibm.com/docs/schematics?topic=schematics-access).
 
-4. In this lab we will be using the following resources. Double-check your access prior to applying the plan.
+4. In this Tutorial we will be using the following resources. Double-check your access prior to applying the plan.
 - Schematics
 - VPC Infrastructure
 
@@ -25,7 +25,7 @@ For Gen2 resource interaction via the CLI, you are required to have the infrastr
 
 `ibmcloud plugin install infrastructure-service`
 
-This lab will be using Gen 2 of the VPC. Set your CLI to target Gen2.
+This Tutorial will be using Gen 2 of the VPC. Set your CLI to target Gen2.
 
 `ibmcloud is target --gen 2`
 
@@ -37,7 +37,7 @@ List the available Compute profiles and record the Name of the profile in which 
 
 `imbcloud is instance-profiles`
 
-6. If you choose to do the optional steps at the end of the lab, you must fork the project into your own repo so that you can make the required modifications and push back into your repo. If you choose to not do the additional steps, or do not have a Github account available, you can just use the lab Git url, but will not have the ability to modify any of the plan. All modifications will only be done via the variables available.
+6. If you choose to do the optional steps at the end of the Tutorial, you must fork the project into your own repo so that you can make the required modifications and push back into your repo. If you choose to not do the additional steps, or do not have a Github account available, you can just use the Tutorial Git url, but will not have the ability to modify any of the plan. All modifications will only be done via the variables available.
 
 ## Task 1: Get Familiar with the Terraform Templates
 Within the project, there are various files in which you will need to have familiarity with, as well as know which variables you will be required to specify values for.
@@ -115,7 +115,7 @@ In this lab you have successfully built an initial 2 zone environment, attached 
 
 ![Workspace Delete](docs/workspace-delete-popup.png)
 
-## Lab Complete
+## Tutorial Complete
 
-Congratulations, you have completed the lab. All resources should now be removed. Think of other ways you may be able to modify the template such as adding additional instances to each of the zones and adding them as members to the load balancer as well.
+Congratulations, you have completed the Tutorial. All resources should now be removed. Think of other ways you may be able to modify the template such as adding additional instances to each of the zones and adding them as members to the load balancer as well.
 
