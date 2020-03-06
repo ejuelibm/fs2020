@@ -115,5 +115,7 @@ In this lab you have successfully built an initial 2 zone environment, attached 
 
 ![Workspace Delete](docs/workspace-delete-popup.png)
 
-3. Congratulations, you have completed the lab. All resources should now be removed. Think of other ways you may be able to modify the template. Possibly try adding additional instances to each of the zones, and add them as members to the load balancer as well.
+## Lab Complete
+
+Congratulations, you have completed the lab. All resources should now be removed. Think of other ways you may be able to modify the template. Possibly try adding additional instances to each of the zones, and add them as members to the load balancer as well.
 
