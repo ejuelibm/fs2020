@@ -9,7 +9,7 @@ Infrastructure as Code (IaC) helps you codify your cloud environment so that you
 **How is IBM Cloud Schematics different from Terraform?**
 With IBM Cloud Schematics, you can organize your IBM Cloud resources across environments by using workspaces. Every workspace is connected to a GitHub repository that contains a set of Terraform configuration files, which build a Terraform template. You can choose to create your own Terraform template, or use one of the pre-defined templates that are provided by IBM. Workspaces allow for the separation of concerns for cloud resources and can be individually managed with IBM Cloud Identity and Access Management. To use IBM Cloud Schematics, you don't need to install the Terraform CLI or the IBM Cloud Provider plug-in for Terraform. 
 
-This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, set up 2 zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
+This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, set up 2 zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the Tutorial.
 
 ![Workspace Architecture](docs/workspace-architecture.png)
 
