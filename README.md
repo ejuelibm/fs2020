@@ -1,4 +1,4 @@
-# FS 2020 Schematics Lab
+# FastStart 2020 Schematics Lab
 ## Introduction
 
 This lab will introduce you to the concepts within Schematics and how to create a VPC, setup two zones each with a subnet, and place a virtual instance in each as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the example.
@@ -117,5 +117,5 @@ In this lab you have successfully built an initial 2 zone environment, attached 
 
 ## Lab Complete
 
-Congratulations, you have completed the lab. All resources should now be removed. Think of other ways you may be able to modify the template. Possibly try adding additional instances to each of the zones, and add them as members to the load balancer as well.
+Congratulations, you have completed the lab. All resources should now be removed. Think of other ways you may be able to modify the template such as adding additional instances to each of the zones and adding them as members to the load balancer as well.
 
