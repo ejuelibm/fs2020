@@ -1,8 +1,7 @@
 #This Configuration will create a VPC, set up 2 zones each with a subnet, and place a virtual instance in each as well as deploy a load
 #balancer attached to the servers. A simple cloud-init script will install nginx, to showcase an http response for proving out the example.
-
-#TF Docs:  https://ibm-cloud.github.io/tf-ibm-docs/
-#CLI Docs:  https://cloud.ibm.com/docs/infrastructure/vpc?topic=vpc-infrastructure-cli-plugin-vpc-reference
+#IBM Cloud Provider for Terraform Docs:  https://ibm-cloud.github.io/tf-ibm-docs/
+#IBM VPC CLI reference:  https://cloud.ibm.com/docs/infrastructure/vpc?topic=vpc-infrastructure-cli-plugin-vpc-reference
 
 #Import the details of an existing SSH Key
 resource "ibm_is_ssh_key" "ssh1" {
