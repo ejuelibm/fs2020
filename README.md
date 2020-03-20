@@ -90,7 +90,6 @@ A Workspace is the defining environment in which you want to provision within Sc
 - **image** - Provide the ID of the OS Image you wish to use
 - **profile** - Provide the name of the Instance Profile type you wish to provision
 
-#![Workspace Variables](docs/workspace-variables.png)
 ![Workspace Variables](docs/Inputvariables.png)
 
 Once all of the values have been entered, click the "Create" button to finalize the new Workspace. This will not create any resources at this time. In the next steps we will look at executing the Plan.
