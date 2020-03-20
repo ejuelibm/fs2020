@@ -48,7 +48,7 @@ resource "ibm_is_subnet" "subnet2" {
   depends_on      = ["ibm_is_vpc_address_prefix.vpc-ap2"]
 }
 
-#Create Virtual Server Instance 1
+#Create Virtual Server Instance 1 on Subnet1 within Zone1
 resource "ibm_is_instance" "instance1" {
   name    = "instance1"
   image   = "${var.image}"
@@ -63,7 +63,7 @@ resource "ibm_is_instance" "instance1" {
   user_data = "${data.template_cloudinit_config.cloud-init-apptier.rendered}"
 }
 
-#Create Virtual Server Instance 2
+#Create Virtual Server Instance 2 on Subnet2 within Zone2
 resource "ibm_is_instance" "instance2" {
   name    = "instance2"
   image   = "${var.image}"
