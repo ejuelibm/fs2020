@@ -48,7 +48,7 @@ List the available Compute profiles and record the Name of the profile in which 
 6. If you choose to do the optional steps at the end of the Tutorial, you must fork the project into your own repo so that you can make the required modifications and push back into your repo. If you choose to not do the additional steps, or do not have a Github account available, you can just use the Tutorial Git url, but will not have the ability to modify any of the plan. All modifications will only be done via the variables available.
 
 ## Task 1: Get Familiar with the Terraform Templates
-Within the project, there are various files in which you will need to have familiarity with, as well as know which variables you will be required to specify values for.
+Within the project, there are various files in which you will need to have familiarity with, as well as know which variables you will be required to specify values for.  Each of the files below are well documented to enhance your understanding of how the files work.
 
 - **provider.tf** - Setup for the IBM Provider as well as the required credentials to be used.
 - **variables.tf** - Holds the variables and possible default values to be used for the plan.
