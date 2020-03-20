@@ -27,7 +27,7 @@ resource "ibm_is_lb_listener" "lb1-listener" {
   protocol = "http"
 }
 
-#Tell our LB to send traffic to Instance 1
+#Tell our LB to send traffic to Instance 1 which is on Subnet1 within Zone1
 resource "ibm_is_lb_pool_member" "lb1-pool-member1" {
   count = 1
   lb = "${ibm_is_lb.lb1.id}"
@@ -36,7 +36,7 @@ resource "ibm_is_lb_pool_member" "lb1-pool-member1" {
   target_address = "${ibm_is_instance.instance1.primary_network_interface.0.primary_ipv4_address}"
 }
 
-#Tell our LB to send traffic to Instance 2
+#Tell our LB to send traffic to Instance 2 which is on Subnet2 within Zone2
 resource "ibm_is_lb_pool_member" "lb1-pool-member2" {
   count = 1
   lb = "${ibm_is_lb.lb1.id}"
