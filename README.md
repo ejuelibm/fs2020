@@ -125,5 +125,5 @@ In this lab you have successfully built an initial 2 zone environment, attached 
 
 ## Tutorial Complete
 
-Congratulations, you have completed the Tutorial. All resources should now be removed. Think of other ways you may be able to modify the template such as adding additional instances to each of the zones and adding them as members to the load balancer as well.
+Congratulations, you have completed the Tutorial. All resources should now be removed. Now that you are familiar with with IBM Schematics, visit https://www.ibm.com/demos/collection/IBM-Cloud-Virtual-Private-Cloud-(VPC)/ to learn more about IBM Cloud VPC and Terraform.
 
