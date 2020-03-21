@@ -92,6 +92,7 @@ A Workspace is the defining environment in which you want to provision within Sc
 
 ![Workspace Variables](docs/Inputvariables.png)
 ![Workspa3ce Variables](docs/test.gif)
+<!--Eric is here -->
 
 Once all of the values have been entered, click the "Create" button to finalize the new Workspace. This will not create any resources at this time. In the next steps we will look at executing the Plan.
 
