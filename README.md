@@ -47,7 +47,7 @@ List the available Compute profiles and record the Name of the profile in which 
 
 6. If you choose to do the optional steps at the end of the Tutorial, you must fork the project into your own repo so that you can make the required modifications and push back into your repo. If you choose to not do the additional steps, or do not have a Github account available, you can just use the Tutorial Git url, but will not have the ability to modify any of the plan. All modifications will only be done via the variables available.
 
-## Task 1: Get Familiar with the Terraform Templates
+## Exercise 1: Get Familiar with the Terraform Templates
 Within the project, there are various files in which you will need to have familiarity with, as well as know which variables you will be required to specify values for.  Each of the files below are well documented to enhance your understanding of how the files work.
 
 - **provider.tf** - Setup for the IBM Provider as well as the required credentials to be used.
@@ -57,7 +57,7 @@ Within the project, there are various files in which you will need to have famil
 - **cloud-init-apptier.tf** - This file contains the Cloud-Init script to be used for each virtual instance to install a simple nginx service.
 - **outputs.tf** - This file contains the output variables that we want to see when the plan is executed and completed. 
 
-## Task 2: Create a new Workspace
+## Exercise 2: Create a new Workspace
 
 A Workspace is the defining environment in which you want to provision within Schematics. The resources defined by the Terraform templates will make up this Workspace. The Terraform templates reside within a GitHub or GitLab repository. For this lab, we will be using this GitHub repository ([https://github.com/Cloud-Schematics/fs2020](https://github.com/Cloud-Schematics/fs2020)) containing the Terraform template files to provision resources. 
 
@@ -98,7 +98,7 @@ Once all of the values have been entered, click the "Create" button to finalize 
 
 ![Workspace Create Order](docs/workspace-order-create.png)
 
-## Task 3: Apply the Plan
+## Exercise 3: Apply the Plan
 
 You now should have a Workspace created. The next step will be to Generate a Plan of your workspace template. Click "Generate plan" to create a Terraform execution plan. No resources will actually be created, but Schematics will go through the process of simulating the resource creation for the plan.
 
@@ -114,12 +114,12 @@ Click on the "View log" link to see the progress of the executing plan. The log 
 Now let's execute the plan to create the resources. Click the "Apply plan" button. Resources should now start provisioning. Like the "Generating Plan" step, you can also view the progress within the "View log" link while resources are being created. If any errors arise, you should see the reason within the log. This initial plan template should not have any issues, so if you have an issue, you may need to check your permissions and credentials.
 
 
-## Task 4: Review VPC in Web UI	
+## Exercise 4: Review VPC in Web UI	
 
 Now let's take a look in our VPC area of the IBM Cloud website and confirm that it built our environment correctly...
 
 
-## Task 5: Delete Resources and Workspace
+## Exercise 5: Delete Resources and Workspace
 
 In this lab you have successfully built an initial 2 zone environment, attached a load balancer, and optionally learned how to add an additional zone to the plan. To finish up with this lab, all you need to do now is delete your resources. You can also delete the Workspace if you choose to not keep it.
 
