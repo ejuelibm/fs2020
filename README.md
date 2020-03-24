@@ -113,7 +113,13 @@ Click on the "View log" link to see the progress of the executing plan. The log 
 
 Now let's execute the plan to create the resources. Click the "Apply plan" button. Resources should now start provisioning. Like the "Generating Plan" step, you can also view the progress within the "View log" link while resources are being created. If any errors arise, you should see the reason within the log. This initial plan template should not have any issues, so if you have an issue, you may need to check your permissions and credentials.
 
-## Task 4: Delete Resources and Workspace
+
+## Task 4: Review VPC in Web UI	
+
+Now let's take a look in our VPC area of the IBM Cloud website and confirm that it built our environment correctly...
+
+
+## Task 5: Delete Resources and Workspace
 
 In this lab you have successfully built an initial 2 zone environment, attached a load balancer, and optionally learned how to add an additional zone to the plan. To finish up with this lab, all you need to do now is delete your resources. You can also delete the Workspace if you choose to not keep it.
 
