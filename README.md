@@ -11,7 +11,7 @@ With IBM Cloud Schematics, you can organize your IBM Cloud resources across envi
 
 This Tutorial will introduce you to the concepts within Schematics and how to create a VPC, set up 2 zones each with a subnet, and place a virtual instance in each Zone as well as deploy a load balancer attached to the servers. A simple cloud-init script will install nginx, just to showcase an http response for proving out the Tutorial.
 
-![Workspace Architecture](docs/workspace-architecture.png)
+![Workspace Architecture](_attachments/workspace-architecture.png)
 
 
 ## Prerequisites
@@ -26,7 +26,7 @@ This Tutorial will introduce you to the concepts within Schematics and how to cr
 - Schematics
 - VPC Infrastructure
 
-![IAM Access](docs/schematics-iam-access.png)
+![IAM Access](_attachments/schematics-iam-access.png)
 
 5. A SSH Key will be required to create the virtual instances. You will need to populate the ssh_key_name variable with the name of a VPC SSH Key that you have already created for the region in which you plan to use. Use this [Example Public Key](example.pubkey). If you use the example key, you will not be able authenticate to the instances, but the lab will still function.
 
@@ -65,21 +65,21 @@ A Workspace is the defining environment in which you want to provision within Sc
 
 1. Login in to your IBM Cloud account via the portal. Navigate to the menu and select [Schematics](https://cloud.ibm.com/schematics).
 
-![Schematics](docs/schematics-menu.png)
+![Schematics](_attachments/schematics-menu.png)
 
-- Click the ![Create Workspace](docs/create-workspace.png) button.
+- Click the ![Create Workspace](_attachments/create-workspace.png) button.
 - Provide a Workspace Name.
 - Enter any tags in which you would like to specify.
 - Select the Resource Group, this can also be reflected in the Plan variables.
 - Add a description of your choice.
 
-![Workspace Name](docs/workspace-name-group-description.png)
+![Workspace Name](_attachments/workspace-name-group-description.png)
 
 - Add the Github URL to this lab, or the forked URL from your own repository if you chose to use a fork.
 - A personal access token should not be required since this lab uses a public GitHub repository.
 - Click the "Retrieve input variables" button.
 
-![Workspace Repo URL](docs/workspace-repo-url.png)
+![Workspace Repo URL](_attachments/workspace-repo-url.png)
 
 2. Upon clicking the "Retrieve input variables" button, Schematics will go out to the provided Github URL and retrieve the template files, also extracting out the variables that have been defined. You should now see the variables populated in a table on your screen. Update any variables for the items in which you choose to modify by entering a new value in the "Override value" textbox. Most variables will already have a default value assigned. You will also notice a sensitive checkbox for each variable. You should not need to secure any of these variables, but if you choose this option, the value will be hidden from the UI later.
 - **ibmcloud_region** - Select the region in which you want to deploy the VPC into, default set to Dallas
@@ -92,26 +92,26 @@ A Workspace is the defining environment in which you want to provision within Sc
 - **image** - Provide the ID of the OS Image you wish to use
 - **profile** - Provide the name of the Instance Profile type you wish to provision
 
-![Workspace Variables](docs/Inputvariables.png)
-<!--![Workspa3ce Variables](docs/test.gif)
+![Workspace Variables](_attachments/Inputvariables.png)
+<!--![Workspa3ce Variables](_attachments/test.gif)
 Eric is here -->
 
 Once all of the values have been entered, click the "Create" button to finalize the new Workspace. This will not create any resources at this time. In the next steps we will look at executing the Plan.
 
-![Workspace Create Order](docs/workspace-order-create.png)
+![Workspace Create Order](_attachments/workspace-order-create.png)
 
 ## Exercise 3: Apply the Plan
 
 You now should have a Workspace created. The next step will be to Generate a Plan of your workspace template. Click "Generate plan" to create a Terraform execution plan. No resources will actually be created, but Schematics will go through the process of simulating the resource creation for the plan.
 
-![Workspace Generate Plan](docs/generate-plan-execution.png)
+![Workspace Generate Plan](_attachments/generate-plan-execution.png)
 
 Click on the "View log" link to see the progress of the executing plan. The log will tail as each of the resources go through their steps. When the log completes, you should see a log output stating the number of resources that will be added, changed and destroyed. For this plan, only resources should be added.
 
-![Workspace Plan Log](docs/generate-plan-execution-log.png)
+![Workspace Plan Log](_attachments/generate-plan-execution-log.png)
 
 
-![Workspace Summary](docs/workspace-summary.png)
+![Workspace Summary](_attachments/workspace-summary.png)
 
 Now let's execute the plan to create the resources. Click the "Apply plan" button. Resources should now start provisioning. Like the "Generating Plan" step, you can also view the progress within the "View log" link while resources are being created. If any errors arise, you should see the reason within the log. This initial plan template should not have any issues, so if you have an issue, you may need to check your permissions and credentials.
 
@@ -127,11 +127,11 @@ In this lab you have successfully built an initial 2 zone environment, attached 
 
 1. Select the "Delete" option in the Action Menu to begin the process.
 
-![Workspace Delete](docs/workspace-action-delete.png)
+![Workspace Delete](_attachments/workspace-action-delete.png)
 
 2. In the popup, select if you wish to remove the workspace or just the resources. Once you have made your selections, click the "Delete" button. This will begin the process of removing resources. Once it is started, you can follow the log to watch the progress of this step and wait for completion. 
 
-![Workspace Delete](docs/workspace-delete-popup.png)
+![Workspace Delete](_attachments/workspace-delete-popup.png)
 
 ## Tutorial Complete
 
