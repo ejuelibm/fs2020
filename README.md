@@ -28,7 +28,7 @@ This Tutorial will introduce you to the concepts within Schematics and how to cr
 
 ![IAM Access](docs/schematics-iam-access.png)
 
-5. A SSH Key will be required to create the virtual instances. You will need to populate the ssh_key_name variable with the name of a VPC SSH Key that you have already created for the region in which you plan to use. Use this Example Public Key [key](example.pubkey). If you use the example key, you will not be able authenticate to the instances, but the lab will still function.
+5. A SSH Key will be required to create the virtual instances. You will need to populate the ssh_key_name variable with the name of a VPC SSH Key that you have already created for the region in which you plan to use. Use this [Example Public Key](example.pubkey). If you use the example key, you will not be able authenticate to the instances, but the lab will still function.
 
 6. If you want to modify the variables for Image and Compute Profile, you will need to obtain these values from the CLI.
 For Gen2 resource interaction via the CLI, you are required to have the infrastructure-services plugin.
